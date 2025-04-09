@@ -1,143 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Student Page</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            background-color: #ffffff;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
+{% extends "base.html" %}
+{% block title %}Student Yearbook{% endblock %}
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 30px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            padding: 0 40px;
-        }
-
-        .student-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-
-        .student-card img.profile {
-            width: 100px;
-            height: 100px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .student-name {
-            font-weight: bold;
-            font-size: 1.2em;
-            font-family: 'Brush Script MT', cursive;
-            margin-bottom: 5px;
-        }
-
-        .student-info {
-            font-size: 0.95em;
-            margin-bottom: 5px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-        }
-
-        #home-button {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            padding: 10px 15px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
+{% block content %}
     <button id="home-button">Home Section</button>
-    <h1>Machine Learning</h1>
+    <section class="student-section">
+        <h1>Machine Learning</h1>
 
-    <div class="grid-container">
-        <!-- Duplicate student-card for more students (or use database to create) -->
-        <div class="student-card">
-            <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
-            <div class="student-name">John Doe</div>
-            <div class="student-info">Machine Learning / Computer Systems Design</div>
-            <div class="student-info">B.S. ‘25 M.S. ‘26</div>
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <div class="grid-container">
+            <!-- Duplicate student-card for more students (or use database to create) -->
+            <div class="student-card">
+                <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
+                <div class="student-name">John Doe</div>
+                <div class="student-info">Machine Learning / Computer Systems Design</div>
+                <div class="student-info">B.S. ‘25 M.S. ‘26</div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="student-card">
+                <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
+                <div class="student-name">John Doe</div>
+                <div class="student-info">Machine Learning / Computer Systems Design</div>
+                <div class="student-info">B.S. ‘25 M.S. ‘26</div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="student-card">
+                <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
+                <div class="student-name">John Doe</div>
+                <div class="student-info">Machine Learning / Computer Systems Design</div>
+                <div class="student-info">B.S. ‘25 M.S. ‘26</div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="student-card">
+                <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
+                <div class="student-name">John Doe</div>
+                <div class="student-info">Machine Learning / Computer Systems Design</div>
+                <div class="student-info">B.S. ‘25 M.S. ‘26</div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="student-card">
+                <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
+                <div class="student-name">John Doe</div>
+                <div class="student-info">Machine Learning / Computer Systems Design</div>
+                <div class="student-info">B.S. ‘25 M.S. ‘26</div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                </div>
             </div>
         </div>
-        <div class="student-card">
-            <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
-            <div class="student-name">John Doe</div>
-            <div class="student-info">Machine Learning / Computer Systems Design</div>
-            <div class="student-info">B.S. ‘25 M.S. ‘26</div>
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-            </div>
-        </div>
-        <div class="student-card">
-            <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
-            <div class="student-name">John Doe</div>
-            <div class="student-info">Machine Learning / Computer Systems Design</div>
-            <div class="student-info">B.S. ‘25 M.S. ‘26</div>
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-            </div>
-        </div>
-        <div class="student-card">
-            <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
-            <div class="student-name">John Doe</div>
-            <div class="student-info">Machine Learning / Computer Systems Design</div>
-            <div class="student-info">B.S. ‘25 M.S. ‘26</div>
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-            </div>
-        </div>
-        <div class="student-card">
-            <img class="profile" src="https://via.placeholder.com/100" alt="Profile Image">
-            <div class="student-name">John Doe</div>
-            <div class="student-info">Machine Learning / Computer Systems Design</div>
-            <div class="student-info">B.S. ‘25 M.S. ‘26</div>
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </div>
+    </section>
     <!-- <script src="../static/js/student_section.js" defer></script> -->
-    
-</body>
-</html>
+{% endblock %}
