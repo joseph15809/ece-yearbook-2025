@@ -39,11 +39,11 @@ def read_html(file_path: str) -> str:
 
 @app.get("/", response_class=HTMLResponse)
 async def home_html(request: Request):
-    return templates.TemplateResponse("app/static/html/index.html", {"request": request})
+    return templates.TemplateResponse("base.html", {"request": request})
 
-@app.get("/student-section", response_class=HTMLResponse)
+@app.get("/student_section", response_class=HTMLResponse)
 async def home_html(request: Request):
-    return templates.TemplateResponse("app/static/html/student_section.html", {"request": request})
+    return templates.TemplateResponse("student_section.html", {"request": request})
 
 if __name__ == "__main__":
     uvicorn.run(app="app.main:app", host="0.0.0.0", port=8000, reload=True)
